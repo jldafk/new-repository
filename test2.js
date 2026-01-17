@@ -1328,3 +1328,64 @@
 //       console.log(matrix[i][j]);
 //     }
 //   }
+
+
+
+
+// class UserStorage {
+//     // loginUser 메소드는 ID와 비밀번호를 받아 로그인을 시도합니다.
+//     loginUser(id, password, onSuccess, onError) {
+//         // 비동기 작업(여기서는 setTimeout으로 모의 구현)
+//         setTimeout(() => {
+//             // 성공 조건을 확인합니다.
+//             if ((id === 'java' && password === 'script') ||
+//                 (id === 'call' && password === 'back')) {
+//                 onSuccess(id); // 성공 시 onSuccess 콜백 호출
+//             } else {
+//                 onError(new Error('not found')); // 실패 시 onError 콜백 호출
+//             }
+//         }, 2000);
+//     }
+
+//     // getRoles 메소드는 사용자 ID를 받아 권한을 확인합니다.
+//     getRoles(id, onSuccess, onError) {
+//         // 비동기 작업
+//         setTimeout(() => {
+//             // 사용자 ID에 따른 권한 할당
+//             if (id === 'java') {
+//                 onSuccess({ id: 'java', role: 'admin' });
+//             } else if(id === 'call') {
+//                 onSuccess({ id: 'call', role: 'manager' });
+//             } else {
+//                 onError(new Error('no access')); // 권한 없음 에러 처리
+//             }
+//         }, 1000);
+//     }
+// }
+// const mypromise =new Promise((resolve,reject) => {
+//     const condition =
+//     if (condition){
+//         resolve('성공');
+//     } else{
+//         reject('실패')
+//     }
+// });
+// const adf = function (a, b) {
+//     return a + b;
+//   };
+  
+//   const result = adf(2, 3);
+//   console.log(result); 
+  
+const add = function (a, b) {
+    return a + b;
+  };
+  
+  
+  const addArrow = (a, b) => a + b;
+  
+  console.log(add(2, 3)); 
+  console.log(addArrow(2, 3));
+  
+  
+  
